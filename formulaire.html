@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulaire de CV</h1>
+    <p>Veuillez remplir ces informations attentivement.</p>
+    <form method="get" action="javascript.html">
+      <fieldset>
+        <label for="first-name">Entrez votre nom: <input placeholder="Prenom" id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Entrer votre prenom: <input placeholder="Nom" id="last-name" name="last-name" type="text" required /></label>
+        <label for="age">Entrez votre age (ans): <input placeholder="Age" id="age" type="number" name="age" min="18" max="120" required /></label>
+        <label for="email">Entrer votre adrese Email: <input placeholder="exempleemail@gmail.com" id="email" name="email" type="email" required /></label>
+        <label for="phone">Tel: <input placeholder="06 32 45 67 89" id="phone" type="tel" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"></label>
+      </fieldset>
+      <fieldset>
+        <h2>Vous preferez?</h2>
+        <label for="frontend"><input id="frontend" type="radio" name="preference" class="inline" /> Front-end</label>
+        <label for="backend"><input id="backend" type="radio" name="preference" class="inline" /> Back-end</label>
+        
+      </fieldset>
+      <fieldset>
+        <h2>Quels sont vos centres d'interrets?</h2>
+        <label for="prog"><input class="inline" id="prog" type="checkbox"  > Programation</label>
+        <label for="cyber"><input class="inline" id="cyber" type="checkbox"  > Securite informatique</label>
+        <label for="ia"><input class="inline" id="ia" type="checkbox"  > Intelligence artificielle</label>
+        <label for="dev"><input class="inline" id="dev" type="checkbox"  > Developpement Web</label>
+        <label for="rob"><input class="inline" id="rob" type="checkbox"  > Robotique</label>
+        <label for="os"><input class="inline" id="os" type="checkbox"  > Open Source</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Veuillez telecharger votre photo: <input id="profile-picture" type="file" name="image" /></label>
+        
+        <label for="comp">Quels langages perfectionnez-vous?
+          <select id="comp" name="comp">
+            <option value="">Choisir</option>
+            <option value="1">Python</option>
+            <option value="2">Java</option>
+            <option value="3">Html,css,javascript</option>
+            <option value="4">C#</option>
+            <option value="5">Autre</option>
+          </select>
+        </label>
+        <label for="resume">Donnez un r&eacute;sum&eacute; de votre carri&egrave;re:
+          <textarea id="resume" name="resume" rows="3" cols="30" placeholder="J'ai commenc&eacute; mes etudes &agrave;..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Soumettre" />
+    </form>
+    
+  </body>
+</html>
